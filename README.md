@@ -3,37 +3,23 @@
 2017 workshop activities for [ENVS3109](http://programsandcourses.anu.edu.au/course/ENVS3019)
 (other content online [here](http://wenfo.org/wald/advanced-remote-sensing))
 
-
-## How this works
-
 In each workshop, you work through that week's exploratory analysis
 using Python in an interactive [Jupyter Notebook](https://jupyter.org/).
-This should take about two hours, leaving one hour for you to experiment
-with other data or help out if someone is stuck.
-
-Alternatively, you can do the analysis excercises on your own time
-earlier in the week, and do a more advanced workshop.
-Each advanced session will focus on teaching you how to use a single key
-tool for scientific computing or software development.
-These optional sessions complement rather than replace the core
-workshops, and do not contribute to your assessment for the course
-(ie. you'd better do the other work too).
+After an introduction to Python, each week will demonstrate a technique you
+can use to analyse remote sensing data with an example dataset.
 
 
-## Core workshops
+Date | Topic | Techniques | Data
+--- | --- | --- | ---
 
-1. Introduction to Python
-2. Basic image analysis
-3. Vegetation over time
-4. Water Observations from Space
-5. *TODO: something about Himawari?  Or student choice from NCI workshops*
+18 Apr | Introduction to Python | syntax and basic usage (see 'software carpentary' below for more) | N/A
+02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | Aerial photos of ANU
+02 May | Change Detection | thresholds, difference between images (small lab due to public holiday) | TBD - 2003 fires?
+09 May | Spatial and Temporal Statistics | selecting data, means and variance, OPeNDAP, time-dimension summaries | TBD
+16 May | Trend Analysis | 'data cubes', reduction to timeseries, uneven spacing, plots | Vegetation indicies
+23 May | Correlation Analysis | TBD | TBD
 
-
-## Extension workshops
-
-- Testing your code
-- Track and share your code with Git
-- Pandas, for fluent data analysis
+Depending on student interest, a number of optional workshops may be organised to cover important tools for writing software (version control with Git, intro to software testing), general data analysis and graphing (how to ditch Excel), and how to use and contribute to open-source projects (plus: what is open source anyway?).
 
 
 ## Useful links
