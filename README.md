@@ -11,12 +11,11 @@ can use to analyse remote sensing data with an example dataset.
 
 Date | Topic | Techniques | Data
 --- | --- | --- | ---
-
 18 Apr | Introduction to Python | syntax and basic usage (see 'software carpentary' below for more) | N/A
 02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | Aerial photos of ANU
-02 May | Change Detection | thresholds, difference between images (small lab due to public holiday) | TBD - 2003 fires?
-09 May | Spatial and Temporal Statistics | selecting data, means and variance, OPeNDAP, time-dimension summaries | TBD
-16 May | Trend Analysis | 'data cubes', reduction to timeseries, uneven spacing, plots | Vegetation indicies
+02 May | Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | TBD - 2003 fires?
+09 May | Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies
+16 May | Combining Vector and Gridded Data | TBD | TBD
 23 May | Correlation Analysis | TBD | TBD
 
 Depending on student interest, a number of optional workshops may be organised to cover important tools for writing software (version control with Git, intro to software testing), general data analysis and graphing (how to ditch Excel), and how to use and contribute to open-source projects (plus: what is open source anyway?).
