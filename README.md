@@ -65,4 +65,5 @@ First, check whether the `remote-sensing` environment already exists by opening 
 
 If `remote-sensing` isn't in the list, run the following command (remember you can right-click and paste a command):
 
-    conda create -n remote-sensing -c conda-forge xarray netcdf4 numpy bottleneck cartopy seaborn dask jupyter_core
+    conda config --append channels conda-forge
+    conda create -n remote-sensing xarray netcdf4 numpy bottleneck seaborn dask scipy jupyter
