@@ -1,6 +1,9 @@
 # Outputs
 my_file.txt
 
+# Inputs
+*.mat
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
