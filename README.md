@@ -12,9 +12,9 @@ can use to analyse remote sensing data with an example dataset.
 Date | Topic | Techniques | Data
 --- | --- | --- | ---
 18 Apr | Introduction to Python | syntax and basic usage (see 'software carpentary' below for more) | N/A
-02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | Aerial photos of ANU
-02 May | Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | TBD - 2003 fires?
-09 May | Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies
+02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | MODIS composite imagery
+02 May | Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | LandSat NDVI - 2003 fires
+09 May | Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies (VOD)
 16 May | Combining Vector and Gridded Data | TBD | TBD
 23 May | Correlation Analysis | TBD | TBD
 
@@ -67,3 +67,19 @@ If `remote-sensing` isn't in the list, run the following command (remember you c
 
     conda config --append channels conda-forge
     conda create --yes --name remote-sensing xarray netcdf4 numpy pandas bottleneck seaborn dask scipy jupyter
+
+### Running the notebooks on ANU computers
+
+The ANU infocommons computers *do* have Anaconda installed, which is great.
+Unfortunately they are using an old and buggy version of the `conda` tool for
+creating and managing environments, so we can't use per-user installs.
+We will therefore use the more generic Python tool `pip`, which has much weaker
+checks for compatibility.  You should use the instructions above at home,
+but this works in the labs:
+
+    pip install --user xarray
+    pip install --user netcdf4
+    pip install --user seaborn
+
+Note that you will get a "kernel not found" warning when opening the notebook -
+just use the root environment ("Python 3" kernel) and it will work.
