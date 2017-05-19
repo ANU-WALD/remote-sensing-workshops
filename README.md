@@ -15,8 +15,8 @@ Date | Topic | Techniques | Data
 02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | MODIS composite imagery
 02 May | Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | LandSat NDVI - 2003 fires
 09 May | Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies (VOD)
-16 May | Combining Vector and Gridded Data | TBD | TBD
-23 May | Correlation Analysis | TBD | TBD
+16 May | Correlation Analysis | more OPeNDAP, statistics in one, two, and three dimensions | soil moisture, soil exposure
+23 May | Combining Vector and Gridded Data | selecting subsets, vector data, reporting | global streamflow model
 
 Depending on student interest, a number of optional workshops may be organised to cover important tools for writing software (version control with Git, intro to software testing), general data analysis and graphing (how to ditch Excel), and how to use and contribute to open-source projects (plus: what is open source anyway?).
 
@@ -41,8 +41,9 @@ Instead of the (many) useful and powerful features, this section just describes 
 - Have Anaconda installed on the computer.  (If you're in an ANU computer lab, it should be)
 - Open a terminal.  On Windows, you can open a terminal in any folder by opening it in the file explorer, clicking the address bar, and typing `cmd` and enter.
 - In the terminal, type `jupyter notebook` and the notebook homepage will open, and you can navigate to the notebook you want.  Alternatively, type `jupyter notebook <name of notebook>` to open it directly.  Note that pressing the tab key completes a partial filename, so you can just type `jupyter notebook 1<tab>` to open the first notebook.
+- To run a cell in the notebook, press shift-enter when the cell is highlighted.
 
-Note that after the first workshop (intro to Python), you will need to
+Note that after the first workshop (intro to Python), you will need to follow the install instructions below.
 
 ### *A brief digression on scientific software*
 
@@ -58,6 +59,7 @@ Installing existing software avoids the need to reinvent decades of useful funct
 In Python, the best way to install scientific packages is the `conda` install tool in [Anaconda](https://www.continuum.io/downloads).  Anaconda just like a Python, but bigger - because it's got many science tools by default.
 
 Since we're using some specialist tools for geospatial data, we'll use `conda` to create a new environment with everything we need (installing too many Python pacakges into one environment leads to [dependency hell](https://en.wikipedia.org/wiki/Dependency_hell)).
+Unfortunately the ANU lab computers have an old version of Anaconda that cannot install some packages without admin permissions on Windows, so skip to the next section in class - but follow these instructions at home!
 
 First, check whether the `remote-sensing` environment already exists by opening a terminal (windows key, then type "cmd" and enter) and running the following command:
 
@@ -68,7 +70,7 @@ If `remote-sensing` isn't in the list, run the following command (remember you c
     conda config --append channels conda-forge
     conda create --yes --name remote-sensing xarray netcdf4 numpy pandas bottleneck seaborn dask scipy jupyter
 
-### Running the notebooks on ANU computers
+### Running the notebooks on ANU lab computers
 
 The ANU infocommons computers *do* have Anaconda installed, which is great.
 Unfortunately they are using an old and buggy version of the `conda` tool for
@@ -81,5 +83,6 @@ but this works in the labs:
     pip install --user netcdf4
     pip install --user seaborn
 
-Note that you will get a "kernel not found" warning when opening the notebook -
-just use the root environment ("Python 3" kernel) and it will work.
+The installed version of `pip` is *also* out of date, but you can safely ignore the request to update it.
+You will get a "kernel not found" warning when opening the notebook, because the `remote-sensing` environment is missing -
+just click "continue" to use the root environment ("Python 3" kernel) and it will work.
