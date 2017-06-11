@@ -40,6 +40,8 @@ Instead of the (many) useful and powerful features, this section just describes 
 
 - Have Anaconda installed on the computer.  (If you're in an ANU computer lab, it should be)
 - Open a terminal.  On Windows, you can open a terminal in any folder by opening it in the file explorer, clicking the address bar, and typing `cmd` and enter.
+- If you have installed Anaconda at home, type `activate remote-sensing` (on Windows),
+  or `source activate remote-sensing` (on OSX or Linux), in the terminal to activate the environment.
 - In the terminal, type `jupyter notebook` and the notebook homepage will open, and you can navigate to the notebook you want.  Alternatively, type `jupyter notebook <name of notebook>` to open it directly.  Note that pressing the tab key completes a partial filename, so you can just type `jupyter notebook 1<tab>` to open the first notebook.
 - To run a cell in the notebook, press shift-enter when the cell is highlighted.
 
