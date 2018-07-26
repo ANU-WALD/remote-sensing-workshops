@@ -1,6 +1,6 @@
 # remote-sensing-workshops
 
-2017 workshop activities for [ENVS3109](http://programsandcourses.anu.edu.au/course/ENVS3019)
+Python tutorials for [ENVS3109](http://programsandcourses.anu.edu.au/course/ENVS3019)
 (other content online [here](http://wenfo.org/wald/advanced-remote-sensing))
 
 In each workshop, you work through that week's exploratory analysis
@@ -9,14 +9,14 @@ After an introduction to Python, each week will demonstrate a technique you
 can use to analyse remote sensing data with an example dataset.
 
 
-Date | Topic | Techniques | Data
---- | --- | --- | ---
-18 Apr | Introduction to Python | syntax and basic usage (see 'software carpentary' below for more) | N/A
-02 May | Image analysis | file formats, loading data, colour scales, combining bands, indices | MODIS composite imagery
-02 May | Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | LandSat NDVI - 2003 fires
-09 May | Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies (VOD)
-16 May | Correlation Analysis | more OPeNDAP, statistics in one, two, and three dimensions | soil moisture, soil exposure
-23 May | Combining Vector and Gridded Data | selecting subsets, vector data, reporting | global streamflow model
+Topic | Techniques | Data
+--- | --- | ---
+Introduction to Python | syntax and basic usage (see 'software carpentary' below for more) | N/A
+Image analysis | file formats, loading data, colour scales, combining bands, indices | MODIS composite imagery
+Change Detection | thresholds, difference between images, selecting data, means and variance, OPeNDAP | LandSat NDVI - 2003 fires
+Trend Analysis | 'data cubes', reduction to timeseries, time-dim summaries, uneven spacing, plots | Vegetation indicies (VOD)
+Correlation Analysis | more OPeNDAP, statistics in one, two, and three dimensions | soil moisture, soil exposure
+Combining Vector and Gridded Data | selecting subsets, vector data, reporting | global streamflow model
 
 Depending on student interest, a number of optional workshops may be organised to cover important tools for writing software (version control with Git, intro to software testing), general data analysis and graphing (how to ditch Excel), and how to use and contribute to open-source projects (plus: what is open source anyway?).
 
